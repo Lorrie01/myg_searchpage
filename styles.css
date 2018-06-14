@@ -1,0 +1,46 @@
+
+body, html {
+
+	background-color:#ffffff;
+
+}
+
+#logo img {
+	border: none;
+
+}
+
+img {
+	height: 44px;
+	width: 120px;
+	clear: both;
+	float: left;
+	margin-right:50px;
+}
+
+.srch {
+	background-color: #fafafa;
+	height: 70px !important;
+}
+
+div{
+	display: block;
+}
+
+.srchbox{
+	background-color:#ffffff;
+	height: 44px;
+	width: 600px;
+	vertical-align: top;
+	border-radius:2px;
+	box-shadow: 0 2px 2px 0;
+	float: left;
+	clear: both
+	margin-left:3000px;
+
+}
+.searchTerm{
+	background-color:#ffffff;
+	height: 40x;
+	
+}
