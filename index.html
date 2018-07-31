@@ -2,26 +2,235 @@
 <html>
 <head>
 	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Google Search Results for Legendary Makeup Artists. This is a web development project from The Odin Project developer training curriculum and is based on a snapshot of a Google Search Results page.">
 	<meta name="keywords" content="HTML, CSS, coding, web developer, web development, makeup artists, makeup">
 	<meta name="author" content="Lorrie Pearson">
 	<title>My Google Search Results</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
 	<link rel="stylesheet" href="styles.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+
 </head>
 <body>
-	<div class="srch">
-	<h1>
-		<a href="https://www.google.com" title="Google Home Page" id="logo" >
-			<img src="images/googlelogo.png" alt="google logo" height="44" width="120"></a></h1>
+	<div class="container">
 
-			<div class="srchbox">
-				<input type="text" class="searchTerm" placeholder="search here">
-				<button type="submit" class="searchButton">
-				</button>
-			</div>
+<div class="row" id="nav">
 
-		</div>
+	<div>
+		<img id="logo" src="images/googlelogo.png" alt="logo">
+	</div>
+
+<div class="column" class="fullSearch">
+	
+	<div class="input-group" class="srch">
+    <input type="text"  class="form-control" placeholder=""/>
+	<p id="query">Volume: 110/mo | CPC: $1.90 | Competition: 0.23</p>
+	<img class="query" src="images/query.png">
+    
+
+    
+</div>
+
+
+	
+  </div>
+
+  <div class="column">
+
+	<ul class="uright">
+				
+				<li><img src="images/google_grid.png" width="30px"/></li>
+				<li><img src="images/google_notify.png" width="35px"/></li>
+				<li><img src="images/google_acc.png" width="35px"/></li>
+			</ul>
+	</div>
+	
+	<div class="nav2">
+		<ul>
+			<li><a href="#">All</a></li>
+			<li><a href="#">Shopping</a></li>
+			<li><a href="#">Images</a></li>
+			<li><a href="#">Videos</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">More</a><li>
+			<li class="navb"><a href="#">Settings</a></li>
+			<li><a href="#">Tools</a></li>
+			<li class="navc">SafeSearch on</a></li>
+		</ul>
+	</div>
+
+</div><!--end nav-->
+
+<div id="resultStats">
+	<p>About 39,300,00 results (0.48 seconds)</p>
+</div>
+
+<div class="iconic">
+	<h3>5 Iconic makeup artists you need to follow on Instagram</h3>
+
+	<ul class="confetti">
+		<img id="dmig" src="images/charlotte-tilbury-6-.jpg" style="width:207px;height:160px; float:right">
+		<li class="insta"><strong>Charlotte Tilbury.</strong> We all know her as the flame-haired <br>
+			boss lady behind the <strong>Charlotte Tilbury</strong> brand, but as a <br>
+			makeup artist her client list is basically like the Met <br>
+		Gala invitee list. ...</li>
+		<li class="insta">Mary Greenwell. ...</li>
+		<li class="insta">Lisa Eldridge. ...</li>
+		<li class="insta">Sir John. ...</li>
+		<li class="insta">Val Garland.</li>
+	</ul>
+	
+
+	<p><a href="https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740">5 Iconic makeup artists you need to follow on Instagram</a><br>
+		<a href="https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740">https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740</a>
+	</div><!--end iconi div-->
+
+	<div class="ask">
+		<h2 class="ask2"> People also ask</h2>
+		
+		<button class="accordion">Who is the most famous makeup artist in the world?</button>
+  
+  <div class="panel">
+    <p class="strong">Just scroll to see these 10 to celebrity makeup artists below</p>
+    <ul class="confetti">
+    	<li class="insta">Robin Black. ...</li>
+    	<li class="insta">Charlotte Tilbury. ...</li>
+    	<li class="insta">Mario Dedivanovic. ...</li>
+    	<li class="insta">Pati Dubroff. ...</li>
+    	<li class="insta">Pat McGrath. ...</li>
+    	<li class="insta">Joyce Bonelli. ...</li>
+    	<li class="insta">Mylah Morales. ...</li>
+    	<li class="insta">Tom Pecheux.</li>
+    	<a class="more" href="https://www.instyle.com/beauty/makeup/10-celebrity-makeup-artists-to-follow-instagram">More Items</a>
+    </ul>
+
+    <a class="nextpage" href="https://www.instyle.com/beauty/makeup/10-celebrity-makeup-artists-to-follow-instagram">10 Celebrity Makeup Artists To Folow on Instagram | InStyle.com</a>
+    <a class="green" href="https://www.instyle.com/beauty/makeup/10-celebrity-makeup-artists-to-follow-instagram">https://www.instyle.com/beauty/makeup/10-celebrity-makeup-artists-to-follow-instagram</a>
+    <div class="best">
+      <p>Search for: <a href="https://www.google.com/search?safe=strict&q=Who+is+the+best+makeup+artist%3F&sa=X&ved=2ahUKEwjL-Y_FlL7cAhXQc98KHcVEBf4Qzmd6BAgNEAo">Who is the best makeup artist?</a></p>
+  </div><!--end best div-->
+</div><!--end panel div-->
+
+<button class="accordion">Why do I have to wash my makeup off?</button>
+<div class="panel">
+	<p>Your pores can become enlarged if you habitually sleep in your makeup. At night is when your skin repairs and rebuilds and you need to give it a fighting chance with a clean slate. Skin cell mitosis is at it's peak between 11 p.m. and 12 a.m. so make sure it's not inhibited by layers of foundation and powder.</p>
+	<a class="more" href="https://www.more.com/beauty/makeup/makeup-tips/answers-15-most-common-makeup-questions">More Beauty | Answers to 15 of the Most Common Makeup Questions</a>
+</div><!--end panel div-->
+
+
+</div><!--end ask div-->
+
+<div class="rc">
+	<h3 class="r"> <a href="https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740">5 Iconic makeup artists you need to follow on Instagram | Confetti.ie</a></h3>
+	<div class="s"><a href="https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740">https://www.confetti.ie/beauty/5-iconic-makeup-artists-need-follow-instagram-28740</a></div>
+	<span class="st">
+		<span class="f">Oct 20, 2017 - </span>
+	</span>
+	"5 Iconic makeup artists you need to follow on Instagram."
+	<em>Charlotte Tilbury</em>
+	"We all know her as the flame-haired boss lady behing the " <em>Charlotte Tilbury</em>"brand, but as a makeup artist her client list is basically like the Met Gala invitee list. Mary Greenwell. Lisa Eldridge. Sir John. Val Garland."</span>
+
+</div><!--end rc div-->
+
+
+<div class="rc">
+
+	<h3 class="r"> <a href="https://www.byrdie.com/famous-makeup-artists--5a5e77b911ea9">13 Famous Makeup Artists To Follow | Byrdie</a></h3>
+	<div class="s"><a href="https://www.byrdie.com/famous-makeup-artists--5a5e77b911ea9">https://www.byrdie.com/famous-makeup-artists--5a5e77b911ea9</a></div>
+	<span class="st">
+		<span class="f">Jan 19, 2018 -</span>
+	</span>
+	"13 Famous Makeup Artists Every Beauty Lover Needs to Follow. 1 / 14. <em>Pat McGrath.</em>
+	Photo: Getty Images. 2 / 14. <em>Charlotte Tilbury.</em> Photo: Getty Images. 3 14. <em>Gucci Westman.</em> Photo: Getty Images. 4 / 14. Nick Barose. Photo: Getty Images. 5 / 14. Pati Dubroff. 6 / 14. <em>Patrick Ta</em>. 7 / 14. <em>Katie Jane Hugues.</em> 9 / 14. James..."</span>
+
+
+</div><!--end rc div-->
+
+<div class="rc">
+	<h3 class="r"><a href="https://www.stylecraze.com/articles/international-makeup-artists/#gref">10 Most Famous Intionational Makeup Artists in 2018 - StyleCraze</a></h3>
+		<div class="s"><a href="https://www.stylecraze.com/articles/international-makeup-artists/#gref">https://www.stylecraze.com > Make Up</a></div>
+		<span class="st">
+			<span class="f">April 13, 2018 - </span>
+		</span>
+		"Top 10 International Makeup Artists. Bobbi Brown: Image:Shutterstock. Laura Mercier: Via Pintrest. Richard Taylor: Via Pintrest. Billy B: Via Pintrest. <em>Pat McGrath:</em> Via Pintrest: Charlie Green: Via Pintrest. Rick Baker: By Mingle MediaTv(Flickr: Rick Baker IMG_2094) [CC-BY-SA-2.0], via Wikimedia Commons. Stan Winston ..."</span>
+	</div><!--end rc div-->
+
+	
+	<div class="rc">
+		<h3 class="r"><a href="http://hauteliving.com/2017/10/iconic-makeup-artists-must-products/644718/">Iconic Makeup Artists With Must-Have Products - Haute Living</a></h3>
+		<div class="s"><a href="http://hauteliving.com/2017/10/iconic-makeup-artists-must-products/644718/">hauteliving.com/2017/10/iconic-makeup-artists-must-products/644718/</a></div>
+
+		<span class="st">
+			<span class="f">Oct 9, 2017 -</span>
+		</span>
+		"The <em>makeup artist</em> is a key component of any celebrity glam squad, and the names you know spend most of thier time jetting around the globe..."</span>
+	</div><!--end rc div-->
+
+
+	<div class="rc">
+		<h3 class="r"><a href="https://www.teenvogue.com/gallery/how-eleven-makeup-artists-made-it-big">How 11 Makeup Artists Made It Big | Teen Vogue</a></h3>
+		<div class="s"><a href="https://www.teenvogue.com/gallery/how-eleven-makeup-artists-made-it-big">https://www.teenvogue.com/gallery/how-eleven-makeup-artists-made-it-big</a></div>
+		<span class="st">
+		"To work with the likes of Miley Cyrus, Kylie Jenner, and Beyonce"</span>
+	</div><!--end rc div-->
+
+	<div class="rc">
+		<h3 class="r"><a href="https://nypost.com/2017/11/30/iconic-makeup-artist-pat-mcgrath-launches-straight-from-the-runway-lip-line/">Iconic makeup artist Pat McGrath launches straight-from-the-runway ...</a></h3>
+		<div class="s"><a href="https://nypost.com/2017/11/30/iconic-makeup-artist-pat-mcgrath-launches-straight-from-the-runway-lip-line/">https://nypost.com/.../iconic-makeup-artist-pat-mcgrath-launches-straight-from-th-ru...</a></div>
+		<span class="st">
+			<span class="f">Nov 30, 2017 -</span>
+		</span>
+		"For famed <em>makeup artist</em>Pat McGrath, this season's beauty focus is going to be shine, shine, shine. "I', all about adding the iridescence...to..." "</span>
+	</div><!--end rc div-->
+
+
+	
+
+	<div id="footer">
+			
+
+	<div id="foot2"> &#9679; 02124, Boston, MA - Reported by this computer- <span class="foot">Use precise location -Learn more</span></div>
+	<br>
+	<br>
+	<div id="footnav">
+		<ul>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Send feedback</a></li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Terms</a></li>
+		</ul>
+	</div>
+<div class="scroll">
+</div>
+	</div>
+
+	</div><!--end container-->
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 </html>
